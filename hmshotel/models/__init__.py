@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import hotel
+from . import hotel,models
