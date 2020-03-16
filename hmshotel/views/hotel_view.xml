@@ -1,0 +1,30 @@
+<odoo>
+    <data>
+
+        <record id = "hotel" model = "ir.ui.view" >
+            <field name = "name">Hotel</field>
+            <field name = "model">hotel_view</field>
+            <field name = "arch" type = "xml">
+                <tree>
+                    <field name = "name" String = "Name"/>
+                    <field name = "code" String = "location"/>
+                    <field name = "location" String = "Location"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id = "hotel.action" model = "ir.actions.act_window">
+            <field name = "name">Hotel Window</field>
+            <field name = "res_model">hotel_view</field>
+            <field name = "view_mode">tree,form></field>
+        </record>
+
+        <menuitem id = "hotel.menu" name = "Hotel"/>
+
+        <menuitem id = "hotel.menu1" name = "Hotel Management" parent = "hotel.menu"/>
+
+        <menuitem id = "" name = "Hotel Management" parent = "hotel.menu1" action = "hotel.action"/>
+
+    </data>
+</odoo>
