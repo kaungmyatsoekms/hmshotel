@@ -2,9 +2,9 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record model="ir.ui.view" id="hms.hotel">
+    <record model="ir.ui.view" id="hmshotel.hmshotel">
       <field name="name">Hotel list</field>
-      <field name="model">hms.hotel</field>
+      <field name="model">hmshotel.hmshotel</field>
       <field name="arch" type="xml">
         <tree>
           <field name="code"/>
