@@ -10,9 +10,9 @@ class hmshotel(models.Model):
     name = fields.Char()
     code = fields.Char()
     location = fields.Char()
-    description = fields.Text()
+    # description = fields.Text()
 
-    @api.depends('value')
-    def _value_pc(self):
-        for record in self:
-            record.value2 = float(record.value) / 100
+    # @api.depends('value')
+    # def _value_pc(self):
+    #     for record in self:
+    #         record.value2 = float(record.value) / 100
