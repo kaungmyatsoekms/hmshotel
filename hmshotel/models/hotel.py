@@ -1,6 +1,7 @@
 from odoo import models, fields, api
+import datetime
 
-class hotel(models.Model):
+class Hotel(models.Model):
     _name = 'hms.hotel'
 
 name = fields.Char()
