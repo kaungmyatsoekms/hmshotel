@@ -1,12 +1,12 @@
--*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
-import datetime
+# from odoo import models, fields, api
+# import datetime
 
-class Hotel(models.Model):
-    _name = 'hms.hotel'
-    _description = 'hmshotel.hmshotel'
+# class Hotel(models.Model):
+#     _name = 'hms.hotel'
+#     _description = 'hmshotel.hmshotel'
 
-name = fields.Char()
-code = fields.Char()
-location = fields.Char()
+# name = fields.Char()
+# code = fields.Char()
+# location = fields.Char()
