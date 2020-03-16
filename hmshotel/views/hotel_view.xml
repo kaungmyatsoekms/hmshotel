@@ -3,7 +3,7 @@
 
         <record id = "hotel" model = "ir.ui.view" >
             <field name = "name">Hotel</field>
-            <field name = "model">hotel_view</field>
+            <field name = "model">hmshotel.hmshotel</field>
             <field name = "arch" type = "xml">
                 <tree>
                     <field name = "name" String = "Name"/>
@@ -16,7 +16,7 @@
 
         <record id = "hotel.action" model = "ir.actions.act_window">
             <field name = "name">Hotel Window</field>
-            <field name = "res_model">hotel_view</field>
+            <field name = "res_model">hmshotel.hmshotel</field>
             <field name = "view_mode">tree,form></field>
         </record>
 
