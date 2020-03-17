@@ -30,5 +30,6 @@
         </record>
 
         <menuitem id = "hotel_configuration_menu" name = "Configuration" parent = "hotel_management_menu" action = "action_hotel"/>
+        <menuitem id = "hotel_report_menu" name = "Pdf Reports" parent = "hotel_configuration_menu" />
     </data>
 </odoo>
