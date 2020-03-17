@@ -3,7 +3,7 @@
 
         <menuitem id = "hotel_menu" name = "Hotel"/>
 
-        <menuitem id = "management_menu" name = "Hotel Management" parent = "hotel.menu"/>
+        <menuitem id = "management_menu" name = "Hotel Management" parent = "hotel_menu"/>
 
         <menuitem id = "management_menu1" name = "Hotel Management" parent = "management_menu" action = "hotel_action"/>
 
