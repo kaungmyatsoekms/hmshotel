@@ -28,6 +28,7 @@
         # 'views/views.xml',
         # 'views/templates.xml',
         # 'views/hotel_view.xml'
+        'views/view.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

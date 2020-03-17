@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+
+        <menuitem id = "hotel_menu" name = "Hotel"/>
+
+        <menuitem id = "management_menu" name = "Management"/>
+
+        <menuitem id = "management_menu1" name = "Management!"/>
+
+        <record id="view_hotel_floor_form" model="ir.ui.view">
+            <field name="name">view_hotel_floor_form</field>
+            <field name="model">hmshotel</field>
+            <field name="arch" type="xml">
+                <form string=" Hotel">
+                    <sheet>
+                        <group>
+                            <field name = "name" String = "Name"/>
+                            <field name = "code" String = "location"/>
+                            <field name = "location" String = "Location"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
