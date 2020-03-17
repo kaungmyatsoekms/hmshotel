@@ -34,9 +34,9 @@
     'demo': [
         'demo/demo.xml',
     ],
-    'installable'
+    'installable':
     True,
-    'application'
+    'application':
     True,
     
 }
