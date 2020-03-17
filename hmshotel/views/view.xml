@@ -30,7 +30,7 @@
         </record>
 
         <menuitem id = "hotel_configuration_menu" name = "Configuration" parent = "hotel_management_menu" action = "action_hotel"/>
-        <!-- <menuitem id = "hotel_report_menu" name = "Pdf Reports" parent = "hotel_configuration_menu" /> -->
+        
 
         <!--======== Floor ======== -->
         <!-- Form view of hotel floor -->
@@ -50,16 +50,16 @@
         </record>
 
         <!-- tree view of hotel floor -->
-        <record id = "view_hotel_floor_tree" model = "ir.ui.view">
-            <field name = "name">hotel.floortree</field>
+        <!-- <record id = "view_hotel_floor_tree" model = "ir.ui.view">
+            <field name = "name">hotel.floor.tree</field>
             <field name = "model">hotel.floor</field>
             <field name = "arch" type = "xml">
-                <tree String = "Hotel Floors">
-                    <field name = "name" String = "Name" widget = "handle" />
-                    <field name = "sequence" String = "Sequence" colspan = "1"/>
+                <tree>
+                    <field name = "name" String = "Name" colspan = "1" />
+                    <field name = "sequence" String = "Sequence" widget = "handle"/>
                 </tree>
             </field>
-        </record>
+        </record> -->
 
         <!-- action of hotel floor -->
         <record id = "open_hotel_floor_form_tree" model = "ir.actions.act_window">
