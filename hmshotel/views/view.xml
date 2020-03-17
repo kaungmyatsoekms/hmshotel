@@ -3,9 +3,9 @@
 
         <menuitem id = "hotel_menu" name = "Hotel"/>
 
-        <menuitem id = "management_menu" name = "Management"/>
+        <menuitem id = "management_menu" name = "Management" parent = "hotel_menu" action = "view_hotel"/>
 
-        <menuitem id = "management_menu1" name = "Management!"/>
+        <!-- <menuitem id = "management_menu1" name = "Management!"/> -->
 
         <record id="view_hotel" model="ir.ui.view">
             <field name="name">view_hotel</field>
