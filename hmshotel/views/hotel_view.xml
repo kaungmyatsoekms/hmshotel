@@ -1,8 +1,14 @@
 <odoo>
     <data>
 
+        <menuitem id = "hotel_menu" name = "Hotel"/>
+
+        <menuitem id = "management_menu" name = "Hotel Management" parent = "hotel.menu"/>
+
+        <menuitem id = "management_menu1" name = "Hotel Management" parent = "management_menu" action = "hotel_action"/>
+
         <record id = "hotel" model = "ir.ui.view" >
-            <field name = "name">Hotel</field>
+            <field name = "name">hotel</field>
             <field name = "model">hmshotel.hmshotel</field>
             <field name = "arch" type = "xml">
                 <tree>
@@ -14,17 +20,13 @@
         </record>
 
 
-        <record id = "hotel.action" model = "ir.actions.act_window">
+        <record id = "hotel_action" model = "ir.actions.act_window">
             <field name = "name">Hotel Window</field>
             <field name = "res_model">hmshotel.hmshotel</field>
             <field name = "view_mode">tree,form></field>
         </record>
 
-        <menuitem id = "hotel.menu" name = "Hotel"/>
-
-        <menuitem id = "hotel.menu1" name = "Hotel Management" parent = "hotel.menu"/>
-
-        <menuitem id = "" name = "Hotel Management" parent = "hotel.menu1" action = "hotel.action"/>
+        
 
     </data>
 </odoo>

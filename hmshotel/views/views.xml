@@ -2,8 +2,8 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record model="ir.ui.view" id="hmshotel.hmshotel">
-      <field name="name">Hotel list</field>
+    <record model="ir.ui.view" id="hmshotel_hmshotel">
+      <field name="name">hmshotel_hmshotel</field>
       <field name="model">hmshotel.hmshotel</field>
       <field name="arch" type="xml">
         <tree>
@@ -17,7 +17,7 @@
 
     <record model="ir.actions.act_window" id="hms.action_window">
       <field name="name">hms window</field>
-      <field name="res_model">hms.hotel</field>
+      <field name="res_model">.hmshotel.hmshotel</field>
       <field name="view_mode">tree,form</field>
     </record>
 
@@ -39,7 +39,7 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="hms" id="hms.menu_root"/>
+    <menuitem name="Hotel" id="hms.menu_root"/>
 
     <!-- menu categories -->
 
