@@ -30,7 +30,7 @@
         </record>
 
         <menuitem id = "hotel_configuration_menu" name = "Configuration" parent = "hotel_management_menu" action = "action_hotel"/>
-        <menuitem id = "hotel_report_menu" name = "Pdf Reports" parent = "hotel_configuration_menu" />
+        <!-- <menuitem id = "hotel_report_menu" name = "Pdf Reports" parent = "hotel_configuration_menu" /> -->
 
         <!--======== Floor ======== -->
         <!-- Form view of hotel floor -->
@@ -51,7 +51,7 @@
 
         <!-- tree view of hotel floor -->
         <record id = "view_hotel_floor_tree" model = "ir.ui.view">
-            <field name = "name">hotel.floor.tree</field>
+            <field name = "name">hotel.floortree</field>
             <field name = "model">hotel.floor</field>
             <field name = "arch" type = "xml">
                 <tree String = "Hotel Floors">
