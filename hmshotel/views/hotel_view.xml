@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
 <odoo>
     <data>
 
@@ -21,7 +23,7 @@
 
 
         <record id = "hotel_action" model = "ir.actions.act_window">
-            <field name = "name">Hotel Window</field>
+            <field name = "name">hotel_action</field>
             <field name = "res_model">hmshotel.hmshotel</field>
             <field name = "view_mode">tree,form></field>
         </record>
