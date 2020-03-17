@@ -1,15 +1,15 @@
 <odoo>
     <data>
 
-        <menuitem id = "hotel_menu" name = "Hotel"/>
+        <menuitem id = "hotel_management_menu" name = "Hotel Management"/>
 
-        <menuitem id = "management_menu" name = "Management" parent = "hotel_menu" action = "action_hotel"/>
+        <menuitem id = "hotel_configuration_menu" name = "Configuration" parent = "hotel_management_menu" action = "action_hotel"/>
 
         <!-- <menuitem id = "management_menu1" name = "Management!"/> -->
 
         <record id="view_hotel" model="ir.ui.view">
             <field name="name">view_hotel</field>
-            <field name="model">hmshotel</field>
+            <field name="model">hmshotel.hmshotel</field>
             <field name="arch" type="xml">
                 <form string=" Hotel">
                     <sheet>
@@ -25,7 +25,7 @@
 
         <record id = "action_hotel" model = "ir.actions.act_window">
             <field name = "name">action_hotel</field>
-            <field name = "res_model">hmshotel</field>
+            <field name = "res_model">hmshotel.hmshotel</field>
             <field name = "view_mode">tree,form</field>
         </record>
     </data>

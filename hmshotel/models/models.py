@@ -4,8 +4,8 @@ from odoo import models, fields, api
 
 
 class hmshotel(models.Model):
-    _name = 'hmshotel'
-    _description = 'hmshotel'
+    _name = 'hmshotel.hmshotel'
+    _description = 'hmshotel.hmshotel'
 
     name = fields.Char()
     code = fields.Char()
