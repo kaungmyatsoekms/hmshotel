@@ -31,5 +31,47 @@
 
         <menuitem id = "hotel_configuration_menu" name = "Configuration" parent = "hotel_management_menu" action = "action_hotel"/>
         <menuitem id = "hotel_report_menu" name = "Pdf Reports" parent = "hotel_configuration_menu" />
+
+        <!--======== Floor ======== -->
+        <!-- Form view of hotel floor -->
+        <record id = "view_hotel_floor_form" model = "ir.ui.view">
+            <field name = "name">hotel.floor.form</field>
+            <field name = "model">hotel.floor</field>
+            <field name = "arch" type = "xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name = "name" String = "Name" colspan = "1"/>
+                            <field name = "sequence" String = "Sequence"  invisible = "1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- tree view of hotel floor -->
+        <record id = "view_hotel_floor_tree" model = "ir.ui.view">
+            <field name = "name">hotel.floor.tree</field>
+            <field name = "model">hotel.floor</field>
+            <field name = "arch" type = "xml">
+                <tree String = "Hotel Floors">
+                    <field name = "name" String = "Name" widget = "handle" />
+                    <field name = "sequence" String = "Sequence" colspan = "1"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- action of hotel floor -->
+        <record id = "open_hotel_floor_form_tree" model = "ir.actions.act_window">
+            <field name = "name">Floor</field>
+            <field name = "res_model">hotel.floor</field>
+            <field name = "view_type">form</field>
+            <field name = "view_mode">tree,form</field>
+        </record>
+
+        <menuitem id = "menu_open_hotel_floor_form_tree" name = "Hotel Floor" action = "open_hotel_floor_form_tree" parent = "hotel_configuration_menu"
+
+
+
     </data>
 </odoo>
