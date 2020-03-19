@@ -50,7 +50,7 @@
         </record>
 
         <!-- tree view of hotel floor -->
-        <record id = "view_hotel_floor_tree" model = "ir.ui.view">
+        <!-- <record id = "view_hotel_floor_tree" model = "ir.ui.view">
             <field name = "name">hotel.floor.tree</field>
             <field name = "model">hotel.floor</field>
             <field name = "arch" type = "xml">
@@ -59,7 +59,7 @@
                     <field name = "sequence" String = "Sequence" widget = "handle"/>
                 </tree>
             </field>
-        </record>
+        </record> -->
 
         <!-- action of hotel floor form -->
         <record id = "open_hotel_floor_form_form" model = "ir.actions.act_window">
