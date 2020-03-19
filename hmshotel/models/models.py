@@ -25,11 +25,11 @@ class HotelFloor(models.Model):
     sequence = fields.Integer('Sequence', size=64, index=True) 
 
 
-class HotelRoomType(models.Model):
-    _name - 'hotel.room.type'
-    _description = 'Roome Type'
+# class HotelRoomType(models.Model):
+#     _name - 'hotel.room.type'
+#     _description = 'Roome Type'
 
-    name = fields.Char('Name', size = 64, required = True )
+#     name = fields.Char('Name', size = 64, required = True )
 #     categ_id = fields.Many2one('hotel.room.type', 'Category')
 #     child_id = fields.One2many('hotel.room.type', 'categ_id','Child Categories')
 
