@@ -5,7 +5,7 @@
 
         
 
-        <!-- <menuitem id = "management_menu1" name = "Management!"/> -->
+        <!-- <menuitem id = "management_menu2" name = "Management!"/> -->
 
         <record id="view_hotel" model="ir.ui.view">
             <field name="name">view_hotel</field>
