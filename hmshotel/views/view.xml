@@ -41,24 +41,8 @@
                 <form>
                     <sheet>
                         <group>
-                            <field name = "property_code" String = "Name" colspan = "1"/>
-                            <field name = "property_name" String = "Sequence"  invisible = "1"/>
-                            <field name = "address1" String = "Address1"/>
-                            <field name = "address2" String = "Address1"/>
-                            <field name = "address3" String = "Address1"/>
-                            <field name = "country_id" String = "Address1"/>
-                            <field name = "state_id" String = "Address1"/>
-                            <field name = "city_id" String = "Address1"/>
-                            <field name = "telephone" String = "Address1"/>
-                            <field name = "fax" String = "Address1"/>
-                            <field name = "email" String = "Address1"/>
-                            <field name = "website" String = "Address1"/>
-                            <field name = "social_media_links" String = "Address1"/>
-                            <field name = "no_of_room" String = "Address1"/>
-                            <field name = "proprety_license" String = "Address1"/>
-                            <field name = "property_rating" String = "Address1"/>
-                            <field name = "property_logo" String = "Address1"/>
-                            <field name = "property_photo" String = "Address1"/>
+                            <field name="name" colspan="1" />
+                            <field name="sequence"  />
                         </group>
                     </sheet>
                 </form>
