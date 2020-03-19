@@ -61,12 +61,20 @@
             </field>
         </record>
 
-        <!-- action of hotel floor -->
-        <record id = "open_hotel_floor_form_tree" model = "ir.actions.act_window">
+        <!-- action of hotel floor form -->
+        <record id = "open_hotel_floor_form_form" model = "ir.actions.act_window">
             <field name = "name">Floor</field>
             <field name = "res_model">hotel.floor</field>
             <field name = "view_type">form</field>
             <field name = "view_mode">form,tree</field>
+        </record>
+
+        <!-- action of hotel floor tree -->
+        <record id = "open_hotel_floor_form_tree" model = "ir.actions.act_window">
+            <field name = "name">Floor</field>
+            <field name = "res_model">hotel.floor</field>
+            <field name = "view_type">tree</field>
+            <field name = "view_mode">tree,form</field>
         </record>
 
         <menuitem id = "menu_open_hotel_floor_form_tree" name = "Hotel Floor" action = "open_hotel_floor_form_tree"
