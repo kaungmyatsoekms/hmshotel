@@ -71,5 +71,8 @@
 
         <menuitem id = "menu_open_hotel_floor_form_tree" name = "Hotel Floor" action = "open_hotel_floor_form_tree"
          parent = "hotel_configuration_menu"/>
+
+        
+
     </data>
 </odoo>
